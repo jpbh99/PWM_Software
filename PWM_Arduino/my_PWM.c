@@ -18,8 +18,8 @@ typedef enum {  // Se definen los estados
 struct ANALOG_WRITE_T { // Se define la estructura oculta
   int   previous_value;
   int   pin_out;
-  int   previous_time;
-  int   time_HI, time_LO;
+  unsigned long   previous_time;
+  unsigned long   time_HI, time_LO;
   PWM_STATE_T state;
 };
 
